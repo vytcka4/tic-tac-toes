@@ -1,0 +1,17 @@
+main {
+  display: grid;
+  width: 450px;
+  height: 600px;
+  /* border: 1px solid; */
+  grid-template-columns: repeat(3, 150px);
+  grid-template-areas: "header header header";
+}
+.grid-item-1 {
+  grid-area: header;
+  text-align: center;
+  justify-content: center;
+}
+.container {
+  border: 1px solid;
+  height: 150px;
+}

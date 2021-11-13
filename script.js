@@ -4,3 +4,4 @@ containers.addEventListener("click", function (x) {
   const newContent = document.createTextNode("X");
   containers.appendChild(newContent);
 });
+const result = document.querySelector(".result-name");

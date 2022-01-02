@@ -36,7 +36,6 @@ const createX = function (e) {
 
 main.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("click");
   if (
     e.target !== container1 &&
     e.target !== container2 &&
@@ -49,6 +48,10 @@ main.addEventListener("click", function (e) {
     e.target !== container9
   ) {
     return;
+  }
+
+  if (click >= 9) {
+    console.log("draw");
   }
   createX(e.target);
   checkWinnerX();

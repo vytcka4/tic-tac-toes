@@ -1,17 +1,17 @@
 main {
   display: grid;
-  width: 450px;
-  height: 600px;
+  width: 451px;
+  height: 450px;
   /* border: 1px solid; */
   grid-template-columns: repeat(3, 150px);
-  grid-template-areas: "header header header";
+  /* grid-template-areas: "header header header"; */
 }
-.grid-item-1 {
+/* .grid-item-1 {
   grid-area: header;
   text-align: center;
   justify-content: center;
-}
-.container {
+} */
+.containers {
   border: 1px solid;
   height: 150px;
 }

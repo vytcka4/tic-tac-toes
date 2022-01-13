@@ -38,3 +38,6 @@ main {
 .hidden {
   display: none;
 }
+.winner {
+  font-size: 2rem;
+}

@@ -9,6 +9,7 @@ const container6 = document.querySelector(".container-6");
 const container7 = document.querySelector(".container-7");
 const container8 = document.querySelector(".container-8");
 const container9 = document.querySelector(".container-9");
+const winnerText = document.querySelector(".winner");
 
 const containers = document.querySelectorAll(".containers");
 console.log(containers);
@@ -52,7 +53,8 @@ main.addEventListener("click", function (e) {
   }
 
   if (click === 8 && draw === true) {
-    console.log("draw");
+    winnerText.innerHTML = "Draw";
+    winnerText.classList.toggle("hidden");
   }
   createX(e.target);
   checkWinnerX();
@@ -69,7 +71,8 @@ const checkWinnerX = function () {
     container2.querySelectorAll(".x").length > 0 &&
     container3.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -77,7 +80,8 @@ const checkWinnerX = function () {
     container5.querySelectorAll(".x").length > 0 &&
     container6.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -85,7 +89,8 @@ const checkWinnerX = function () {
     container8.querySelectorAll(".x").length > 0 &&
     container9.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -93,7 +98,8 @@ const checkWinnerX = function () {
     container4.querySelectorAll(".x").length > 0 &&
     container7.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -101,7 +107,8 @@ const checkWinnerX = function () {
     container5.querySelectorAll(".x").length > 0 &&
     container8.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -109,7 +116,8 @@ const checkWinnerX = function () {
     container6.querySelectorAll(".x").length > 0 &&
     container9.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -117,7 +125,8 @@ const checkWinnerX = function () {
     container5.querySelectorAll(".x").length > 0 &&
     container9.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -125,7 +134,8 @@ const checkWinnerX = function () {
     container5.querySelectorAll(".x").length > 0 &&
     container7.querySelectorAll(".x").length > 0
   ) {
-    console.log("x is a wiiner");
+    winnerText.innerHTML = "X is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
 };
@@ -140,7 +150,8 @@ const checkWinnerO = function () {
     container2.querySelectorAll(".o").length > 0 &&
     container3.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -148,7 +159,8 @@ const checkWinnerO = function () {
     container5.querySelectorAll(".o").length > 0 &&
     container6.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -156,7 +168,8 @@ const checkWinnerO = function () {
     container8.querySelectorAll(".o").length > 0 &&
     container9.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -164,7 +177,8 @@ const checkWinnerO = function () {
     container4.querySelectorAll(".o").length > 0 &&
     container7.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -172,7 +186,8 @@ const checkWinnerO = function () {
     container5.querySelectorAll(".o").length > 0 &&
     container8.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -180,7 +195,8 @@ const checkWinnerO = function () {
     container6.querySelectorAll(".o").length > 0 &&
     container9.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -188,7 +204,8 @@ const checkWinnerO = function () {
     container5.querySelectorAll(".o").length > 0 &&
     container9.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
   if (
@@ -196,7 +213,8 @@ const checkWinnerO = function () {
     container5.querySelectorAll(".o").length > 0 &&
     container7.querySelectorAll(".o").length > 0
   ) {
-    console.log("o is a wiiner");
+    winnerText.innerHTML = "O is a winner";
+    winnerText.classList.toggle("hidden");
     draw = false;
   }
 };

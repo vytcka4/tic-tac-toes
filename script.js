@@ -10,6 +10,7 @@ const container7 = document.querySelector(".container-7");
 const container8 = document.querySelector(".container-8");
 const container9 = document.querySelector(".container-9");
 const winnerText = document.querySelector(".winner");
+const resetbtn = document.querySelector(".reset");
 
 const containers = document.querySelectorAll(".containers");
 console.log(containers);
@@ -218,6 +219,17 @@ const checkWinnerO = function () {
     draw = false;
   }
 };
+
+resetbtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  for (let i = 0; i < 10; i++) {
+    let meme = `${container}${i}`.Node;
+    console.log(meme);
+    // meme.removeChild(meme.firstChild);
+    // console.log(container[i]);
+  }
+});
+
 // containers.forEach((item) =>
 //   item.addEventListener("click", function (item) {
 //     item.preventDefault();

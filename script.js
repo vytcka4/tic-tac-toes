@@ -222,12 +222,17 @@ const checkWinnerO = function () {
 
 resetbtn.addEventListener("click", function (e) {
   e.preventDefault();
-  for (let i = 0; i < 10; i++) {
-    let meme = `${container}${i}`.Node;
-    console.log(meme);
-    // meme.removeChild(meme.firstChild);
-    // console.log(container[i]);
-  }
+  [...containers].forEach(function (elements, i) {
+    if (elements.firstChild) {
+      elements.removeChild(elements.firstChild);
+    }
+    click = 0;
+    draw = true;
+    winnerText.classList.toggle("hidden");
+  });
+
+  // meme.removeChild(meme.firstChild);
+  // console.log(container[i]);
 });
 
 // containers.forEach((item) =>

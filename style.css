@@ -1,4 +1,15 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 main {
+  margin: 0 auto;
   display: grid;
   width: 451px;
   height: 450px;
@@ -12,6 +23,18 @@ main {
   justify-content: center;
 } */
 .containers {
-  border: 1px solid;
+  border: 3px solid;
   height: 150px;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.x,
+.o {
+  margin: 0 auto;
+  font-size: 130px;
+}
+
+.hidden {
+  display: none;
 }

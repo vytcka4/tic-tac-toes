@@ -41,3 +41,8 @@ main {
 .winner {
   font-size: 2rem;
 }
+
+.reset {
+  margin-top: 2rem;
+  padding: 20px 30px;
+}

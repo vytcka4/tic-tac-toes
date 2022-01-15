@@ -228,7 +228,9 @@ resetbtn.addEventListener("click", function (e) {
     }
     click = 0;
     draw = true;
-    winnerText.classList.toggle("hidden");
+    if (!winnerText.classList.contains("hidden")) {
+      winnerText.classList.toggle("hidden");
+    }
   });
 
   // meme.removeChild(meme.firstChild);

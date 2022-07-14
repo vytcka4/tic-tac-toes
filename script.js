@@ -285,3 +285,17 @@ resetbtn.addEventListener("click", function (e) {
 //   containers.appendChild(x);
 // });
 // const result = document.querySelector(".result-name");
+const nums = [1, 2, 3, 4, 5, 6, 7];
+const k = 3;
+
+const haha = (nums, k) => {
+  for (let s = 1; s <= k; s++) {
+    let index = nums.length - 1;
+    let [num2] = nums.slice(index);
+    nums.pop();
+    nums.unshift(num2);
+  }
+  return nums;
+};
+
+haha(nums, k);
